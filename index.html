@@ -3,11 +3,119 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
   </head>
-  <body>
+  <body onload="hideElements()">
+    <div class="quizCard">
+      <div class="title">
+        <h1 class="quizTitle"> Quiz title </h1>
+      </div>
+    </div>
 
-    
+    <div class="questionCard">
+      
+      <div id="introCard">
+        <h2> Quiz subtitle</h2>
+        <br>
+        <p> Answer the questions....</p>
+        <input type="button" value="Start Quiz" class="btn btn-success text-center" onclick="getQuestion1()"/>
+      </div>
+
+      <form id="quizform">
+
+        <div id="question1">
+          <h2> Question1</h2>
+          <input type="radio" name="question1" id="answer1" value="">
+          <label for="answer1"> a) Answer 1</label>
+        
+          <input type="radio" name="question1" id="answer2" value="">
+          <label for="answer2"> a) Answer 2</label>
+       
+          <input type="radio" name="question1" id="answer3" value="">
+          <label for="answer3"> a) Answer 3</label>
+
+          <input type="button" value="Next"class="btn btn-success text-center" onclick="getQuestion2()"/>
+        </div>
+
+        <div id="question2">
+          <h2> Question2</h2>
+          <input type="radio" name="question2" id="answer1" value="">
+          <label for="answer1"> a) Answer 1</label>
+        
+          <input type="radio" name="question2" id="answer2" value="">
+          <label for="answer2"> a) Answer 2</label>
+       
+          <input type="radio" name="question2" id="answer3" value="">
+          <label for="answer3"> a) Answer 3</label>
+
+          <input type="button" value="Next"class="btn btn-success text-center" onclick="getQuestion3()"/>
+        </div>
+
+        <div id="question3">
+          <h2> Question3</h2>
+          <input type="radio" name="question3" id="answer1" value="">
+          <label for="answer1"> a) Answer 1</label>
+        
+          <input type="radio" name="question3" id="answer2" value="">
+          <label for="answer2"> a) Answer 2</label>
+       
+          <input type="radio" name="question3" id="answer3" value="">
+          <label for="answer3"> a) Answer 3</label>
+
+          <input type="button" value="Next"class="btn btn-success text-center" onclick="getQuestion4()"/>
+        </div>
+
+        <div id="question4">
+          <h2> Question4</h2>
+          <input type="radio" name="question4" id="answer1" value="">
+          <label for="answer1"> a) Answer 1</label>
+        
+          <input type="radio" name="question4" id="answer2" value="">
+          <label for="answer2"> a) Answer 2</label>
+       
+          <input type="radio" name="question4" id="answer3" value="">
+          <label for="answer3"> a) Answer 3</label>
+
+          <input type="button" value="Next"class="btn btn-success text-center" onclick="getQuestion5()"/>
+        </div>
+
+        <div id="question5">
+          <h2> Question5</h2>
+          <input type="radio" name="question5" id="answer1" value="">
+          <label for="answer1"> a) Answer 1</label>
+        
+          <input type="radio" name="question5" id="answer2" value="">
+          <label for="answer2"> a) Answer 2</label>
+       
+          <input type="radio" name="question5" id="answer3" value="">
+          <label for="answer3"> a) Answer 3</label>
+
+          <input type="button" value="Next"class="btn btn-success text-center" onclick="getQuestion6()"/>
+        </div>
+
+        <div id="question6">
+          <h2> Question6</h2>
+          <input type="radio" name="question6" id="answer1" value="">
+          <label for="answer1"> a) Answer 1</label>
+        
+          <input type="radio" name="question6" id="answer2" value="">
+          <label for="answer2"> a) Answer 2</label>
+       
+          <input type="radio" name="question6" id="answer3" value="">
+          <label for="answer3"> a) Answer 3</label>
+
+          <input type="button" value="View results"class="btn btn-success text-center" onclick="getResults()"/>
+        </div>
+      </form>
+
+
+      <div id="results">
+        <h2> Your result:</h2>
+        <br>
+        <p id="result"></p>
+      </div>
+    </div>
+
     <script src="quiz.js" type="text/javascript"></script>
   </body>
 </html>
