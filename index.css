@@ -1,0 +1,29 @@
+
+#question1, #question2, #question3, #question4, #question5, #question6{
+    width:100%
+}
+
+.quizCard{
+    text-align:center
+}
+
+.questionCard{
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height:400px;
+    width:800px;
+    background-color: gray;
+    border-radius: 3px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px){
+    .questionCard{
+        width: auto;
+    }
+}

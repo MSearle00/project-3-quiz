@@ -17,7 +17,7 @@ function getQuestion1() {
 function getQuestion2() {
     document.getElementById("question1").style.display = "none";
     document.getElementById("question2").style.display = "inline-block";
-  }
+}
 
   function getQuestion3() {
     document.getElementById("question2").style.display = "none";
@@ -40,4 +40,8 @@ function getQuestion2() {
   function getResults() {
     document.getElementById("question6").style.display = "none";
     document.getElementById("results").style.display = "inline-block";
+  }
+  function restart() {
+    document.getElementById("results").style.display = "none";
+    document.getElementById("introCard").style.display = "inline-block";
   }
