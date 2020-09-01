@@ -7,16 +7,20 @@
     text-align:center
 }
 
+body{
+    background-color: gray;
+}
+
 .questionCard{
     margin: auto;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    height:400px;
+    height:300px;
     width:800px;
-    background-color: gray;
-    border-radius: 3px;
+    background-color: rgb(168, 168, 168);
+    border-radius: 20px;
     text-align: center;
     display:flex;
     justify-content: center;
